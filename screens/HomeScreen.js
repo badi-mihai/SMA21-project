@@ -9,12 +9,13 @@ import {
 } from "react-native";
 import uuidv1 from "uuid/v1";
 import _values from "lodash.values";
-import { Button, Text as NBText, Segment } from "native-base";
+import { Text as NBText, Segment } from "native-base";
 import { AppLoading } from "expo";
 import * as Font from "expo-font";
 import Header from "../components/Header";
 import Item from "../components/Item";
 import FloatingButton from "../components/FloatingButton";
+import { Button } from "react-native-paper";
 
 export class HomeScreen extends Component {
   static navigationOptions = {
@@ -160,6 +161,7 @@ export class HomeScreen extends Component {
               colorScheme = "secondary"
               active={filter === "Todo"}
               onPress={() => this.setState({ filter: "Todo" })}
+              icon="check-circle-outline"
             >
               <NBText style={{ color: "#8A2BE2" }}>TODO</NBText>
             </Button>
@@ -167,6 +169,7 @@ export class HomeScreen extends Component {
               last
               active={filter === "Complete"}
               onPress={() => this.setState({ filter: "Complete" })}
+              icon="check-circle"
             >
               <NBText style={{ color: "#8A2BE2" }}>Completed</NBText>
             </Button>

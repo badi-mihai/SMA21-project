@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<NBHeader style={{ backgroundColor: '#5859f2' }}>
 			<Body>
-				<Title style={{ color: '#ffffff', alignSelf: 'center' }}>Header</Title>
+				<Title style={{ color: '#ffffff', alignSelf: 'center' }}>ToDoApp</Title>
 			</Body>
 		</NBHeader>
 	)
